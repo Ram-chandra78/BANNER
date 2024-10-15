@@ -1,0 +1,249 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --body-font: "work sans";
+  --body-color: #262626;
+  --white-color: #fff;
+  --hover-color: #ef5d39;
+  --head-font: "Inter";
+}
+
+.dark-theme {
+  --body-color: #000106;
+  --hover-color: #f37509;
+}
+body {
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-family: var(--body-font);
+  font-family: var(--head-font);
+}
+
+header,
+section,
+footer {
+  width: 100%;
+  float: left;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url(../fonts/);
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/inter/Inter_24pt-Black.ttf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: "work sans";
+  src: url(../fonts/Work_Sans/WorkSans-Thin.ttf);
+  font-weight: 100;
+}
+@font-face {
+  font-family: "work sans";
+  src: url(../fonts/Work_Sans/WorkSans-ExtraLight.ttf);
+  font-weight: 200;
+}
+@font-face {
+  font-family: "work sans";
+  src: url(../fonts/Work_Sans/WorkSans-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "work sans";
+  src: url(../fonts/Work_Sans/WorkSans-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "work sans";
+  src: url(../fonts/Work_Sans/WorkSans-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "work sans";
+  src: url(../fonts/Work_Sans/WorkSans-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "work sans";
+  src: url(../fonts/Work_Sans/WorkSans-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "work sans";
+  src: url(../fonts/Work_Sans/WorkSans-ExtraBold.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: "work sans";
+  src: url(../fonts/Work_Sans/WorkSans-Black.ttf);
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header {
+  position: relative;
+  z-index: 999999999999;
+}
+
+header .navbar {
+  background: transparent !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  margin: 0 40px;
+}
+header .navbar-brand img {
+  height: 60px;
+  border-radius: 50%;
+}
+header .navbar li.nav-item a.nav-link {
+  color: var(--white-color);
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: var(--body-font);
+}
+header .navbar li.nav-item ul li a.dropdown-item {
+  padding: 0.7rem 0.7rem;
+  color: var(--white-color);
+  font-size: 15px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: var(--body-font);
+}
+header .navbar li.nav-item ul li {
+  padding: 0 10px;
+}
+.dropdown-menu[data-bs-popper] {
+  margin: 1.5rem -5.7rem 0.125rem;
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: var(--hover-color) !important;
+  background-color: #2b2b2b !important;
+}
+
+.dropdown-menu {
+  min-width: 14rem;
+  border-radius: 1.5rem;
+  background-color: var(--body-color);
+}
+header .navbar ul li.nav-item .nav-link:hover {
+  color: var(--hover-color);
+}
+header .navbar li.nav-item ul.dropdown-menu .arrow {
+  position: absolute;
+  top: -7px;
+  right: 50%;
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+  background-color: var(--body-color);
+  z-index: -1;
+}
+header .navbar .moonbox .row a i {
+  font-size: 35px;
+  color: var(--white-color);
+}
+section .carousel .carousel-inner img {
+  height: 100vh;
+}
+section.banner {
+  height: 100vh;
+}
+section.banner .carousel,
+section.banner .carousel-inner,
+section.banner .carousel-item,
+section.banner .carousel-item img,
+video {
+  height: 100%;
+  object-fit: cover;
+}
+section .carousel .carousel-inner::before {
+  content: "";
+  background: #000;
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.carousel-caption {
+  left: 40px;
+  top: 25%;
+  text-align: left;
+  z-index: 999;
+  height: 400px;
+}
+section .carousel p.our {
+  color: var(--white-color);
+  font-family: var(--head-font);
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin: 0;
+}
+section .carousel h5 {
+  color: var(--white-color);
+  font-size: 8vw;
+  font-family: var(--head-font);
+  font-weight: 900;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-left: -12px;
+}
+section .carousel p.disc {
+  font-size: 22px;
+  margin: 20px 0px 40px 0px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #ffffffb0;
+  font-family: var(--body-font);
+  letter-spacing: 1px;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  bottom: 50px !important;
+  background-color: #ffffff00;
+  backdrop-filter: blur(20px);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  opacity: 1;
+  top: 75%;
+  margin: 75px;
+}
+
+.carousel-dark .carousel-control-next-icon,
+.carousel-dark .carousel-control-prev-icon {
+  color: var(--white-color) !important;
+  font-weight: bolder;
+  filter: none;
+}
+.carousel-indicators [data-bs-target] {
+  width: 170px;
+  height: 4px;
+  margin: 0;
+  transition: opacity 1s ease;
+}
+.navbar-light .navbar-nav .nav-link:focus {
+  color: var(--hover-color);
+}
